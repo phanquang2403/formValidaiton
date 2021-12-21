@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/index.css">
+    <link rel="stylesheet" href="scss/resert.css">
+    <script src="index.js"> </script>
+   
+</head>
+<body>
+    <div class="container">
+        <form  id='form1'>
+            <div class="group-form">
+                <label for="">Username:</label>
+                <input type="text" name="username" id="username" placeholder="username">
+                <div class="errow"></div>
+            </div>
+            <div class="group-form">
+                <label for="">Email:</label>
+                <input type="email" name="email" id="email" placeholder="email">
+                <div class="errow"></div>
+            </div>
+            <div class="group-form">
+                <label for="">Password:</label>
+                <input type="password" name="password" id="password" placeholder="password">
+                <div class="errow"></div>
+            </div>
+            <div class="group-form">
+                <label for="">Confirm Password:</label>
+                <input type="password" name="re_password" id="re_password" placeholder="username">
+                <div class="errow"></div>
+            </div>
+            <input type="submit" name="submit" class="submit" value="SUBMIT">
+        </form>
+    </div>
+    
+    <script>
+
+        var newForm = new Form({
+            el : 'form1',
+            rules : {
+                username : {
+                    required : true,
+                    minlength : 6
+                },
+                email : {
+                    required : true,
+                    email: true,
+                   
+                },
+                password: {
+                    required: true,
+                    minlength : 8,
+                },
+                re_password : {
+                    required: true,
+                    confirm_pass : 'password',
+                   
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

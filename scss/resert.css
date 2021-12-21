@@ -1,0 +1,33 @@
+:root{
+    --color-br:#80bb35;
+    --cl-white:white;
+    --cl-t:rgb(167, 136, 136);
+    --cl-text:rgb(80, 67, 67);
+    --cl-bd:rgb(226, 216, 216);
+}
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button,input {
+  border: none;
+  background: none;
+  outline: none;
+}
+body{
+    overflow-x: hidden;
+}
+.owl-nav{display: none;}
